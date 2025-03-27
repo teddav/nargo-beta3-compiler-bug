@@ -17,9 +17,15 @@ impl Date {
         let year = self.year;
         println(f"YEAR: {year}");
 
+        let year_mod_100 = self.year % 100;
+        println(f"year_mod_100: {year_mod_100}");
+
+        let year_mod_400 = self.year % 400;
+        println(f"year_mod_400: {year_mod_400}");
+
         let check1 = self.year % 4 == 0;
-        let check2 = self.year % 100 != 0;
-        let check3 = self.year % 400 == 0;
+        let check2 = year_mod_100 != 0;
+        let check3 = year_mod_400 == 0;
         println(f"self.year % 4 == 0   : {check1}");
         println(f"self.year % 100 != 0 : {check2}");
         println(f"self.year % 400 == 0 : {check3}");
