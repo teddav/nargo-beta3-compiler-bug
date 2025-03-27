@@ -1,0 +1,8 @@
+[package]
+name = "app"
+type = "bin"
+authors = [""]
+
+[dependencies]
+# date = { tag = "main", git = "https://github.com/madztheo/noir-date.git" }
+# date = { path = "../noir-date" }
