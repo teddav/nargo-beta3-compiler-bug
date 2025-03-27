@@ -14,10 +14,16 @@ self.year % 100
 self.year % 400
 ```
 
-## When?
+## When does it happen?
 
 This only happens with `nargo execute`. When running in test mode, everything runs fine.  
 This also only happens if the Date is passed as an input to the circuit. If Date is initialized in `main`, then everything is fine
+
+## Minimal code
+
+I tried to reduce the code to a minimal. I kept the idea of the Date since that's where I found the bug.
+
+I put "2021" as random in Prover.toml and for the assert in [is_leap_year](./src/date.nr#35), but you can try with any other year
 
 ## Run
 
