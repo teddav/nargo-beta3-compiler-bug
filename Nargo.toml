@@ -1,8 +1,6 @@
 [package]
-name = "app"
+name = "nargo_compiler_bug"
 type = "bin"
-authors = [""]
+authors = ["teddav"]
 
 [dependencies]
-# date = { tag = "main", git = "https://github.com/madztheo/noir-date.git" }
-# date = { path = "../noir-date" }
