@@ -19,6 +19,12 @@ self.year % 400
 This only happens with `nargo execute`. When running in test mode, everything runs fine.  
 This also only happens if the Date is passed as an input to the circuit. If Date is initialized in `main`, then everything is fine
 
+### intuition
+
+Actually I have no idea for now.. 😅  
+But the bug happens because of the first `if` condition. Even though it doesn't enter the `if`.  
+When removing the `if`, it runs correctly
+
 ## Minimal code
 
 I tried to reduce the code to a minimal. I kept the idea of the Date since that's where I found the bug.
