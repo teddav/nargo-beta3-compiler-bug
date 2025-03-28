@@ -27,9 +27,9 @@ When removing the `if`, it runs correctly
 
 ## Minimal code
 
-I tried to reduce the code to a minimal. I kept the idea of the Date since that's where I found the bug.
+I tried to reduce the code to a minimal. Only keeping an if (not entered) with a call to the problematic function, and then actually calling the function.
 
-I put "2021" as random in Prover.toml and for the assert in [is_leap_year](./src/date.nr#35), but you can try with any other year
+I put "121" as random in Prover.toml and for the assert in [bad_function](./src/main.nr#15), but anything can be used
 
 ## Run
 
